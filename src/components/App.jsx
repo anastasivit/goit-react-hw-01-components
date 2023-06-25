@@ -2,7 +2,6 @@ import React from 'react';
 import Profile from './Profile';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
-import friends from '../friends.json';
 
 const App = () => {
   const user = {
@@ -23,6 +22,39 @@ const App = () => {
     { id: 'id-3', label: '.mp3', percentage: 17 },
     { id: 'id-4', label: '.psd', percentage: 47 },
     { id: 'id-5', label: '.pdf', percentage: 10 },
+  ];
+
+  const friends = [
+    {
+      avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998592.png',
+      name: 'Mango',
+      isOnline: true,
+      id: 1812,
+    },
+    {
+      avatar: 'https://cdn-icons-png.flaticon.com/512/616/616438.png',
+      name: 'Kiwi',
+      isOnline: false,
+      id: 1137,
+    },
+    {
+      avatar: 'https://cdn-icons-png.flaticon.com/512/1623/1623681.png',
+      name: 'Ajax',
+      isOnline: true,
+      id: 1213,
+    },
+    {
+      avatar: 'https://cdn-icons-png.flaticon.com/512/2977/2977285.png',
+      name: 'Jay',
+      isOnline: true,
+      id: 1714,
+    },
+    {
+      avatar: 'https://cdn-icons-png.flaticon.com/512/1998/1998749.png',
+      name: 'Poly',
+      isOnline: false,
+      id: 1284,
+    },
   ];
 
   return (
