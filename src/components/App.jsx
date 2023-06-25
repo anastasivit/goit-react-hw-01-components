@@ -1,7 +1,8 @@
 import React from 'react';
-import Profile from './Profile';
-import Statistics from './Statistics';
-import FriendList from './FriendList';
+import Profile from './Profile/Profile';
+import Statistics from './Statistics/Statistics';
+import FriendList from './FriendList/FriendList';
+import TransactionHistory from './TransactionHistory/TransactionHistory';
 
 const App = () => {
   const user = {
@@ -57,6 +58,22 @@ const App = () => {
     },
   ];
 
+  const transactions = [
+    {
+      id: '1e0700a2-5183-4291-85cc-2065a036a683',
+      type: 'invoice',
+      amount: '964.82',
+      currency: 'LRD',
+    },
+    {
+      id: 'a30f821b-4d25-4ff0-abdd-e340b3f0dd2b',
+      type: 'payment',
+      amount: '686.50',
+      currency: 'WST',
+    },
+    // Додайте інші транзакції тут
+  ];
+
   return (
     <div>
       <Profile
@@ -68,6 +85,7 @@ const App = () => {
       />
       <Statistics stats={statsData} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 };
