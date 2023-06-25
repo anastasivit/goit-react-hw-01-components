@@ -71,7 +71,6 @@ const App = () => {
       amount: '686.50',
       currency: 'WST',
     },
-    // Додайте інші транзакції тут
   ];
 
   return (
